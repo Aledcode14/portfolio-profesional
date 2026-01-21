@@ -1,1 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+/* MENÚ LATERAL */
+nav {
+    width: 240px;
+    background: #020617;
+    color: white;
+    height: 100vh;
+    padding: 30px 20px;
+    position: fixed;
+}
+
+nav h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #2563eb;
+}
+
+/* CONTENIDO */
+main {
+    margin-left: 260px;
+    padding: 40px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* GALERÍA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img,
+.card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay span {
+    background: #22c55e;
+    color: black;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+}
 
