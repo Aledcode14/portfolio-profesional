@@ -57,11 +57,7 @@ h1 {
     gap: 25px;
 }
 
-.card {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-}
+
 
 .card img,
 .card video {
